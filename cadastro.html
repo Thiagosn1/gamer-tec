@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | Gamer TEC</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="https://www.flaticon.com/authors/sbts2018">
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="/gamer-tec/index.html">Gamer<span> TEC</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Cadastro</h2>
+            <form id="formulario">
+                <fieldset>
+                    <Legend>
+                        <h3 class="subtitle">Dados Pessoais</h3>
+                    </Legend>
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" name="nome"/>
+                        <label>Sobrenome:</label>
+                        <input type="text" name="sobrenome"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Sexo:</label>
+                        <input type="text" name="sexo"/>
+                        <label>Celular:</label>
+                        <input type="tel" name="data_nascimento"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="email" name="email"/>
+                        <label>Senha:</label>
+                        <input type="password" name="senha"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label>CPF:</label>
+                        <input type="text" name="cpf"/>
+                        <label>Data de nascimento:</label>
+                        <input type="date" name="data_nascimento"/>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        <h3 class="subtitle">Endereço</h3>
+                    </legend>
+                    <div>
+                        <label for="nome">CEP:</label>
+                        <input type="text" name="cep"/>
+                        <label for="nome">Rua:</label>
+                        <input type="text" name="rua"/>
+                        <label for="nome">Complemento:</label>
+                        <input type="text" name="Complemento"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Bairro:</label>
+                        <input type="text" name="bairro"/>
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade"/>
+                        <label>Estado</label>
+                        <select name="estados-brasil">
+                          <option value="">Selecione</option>
+                          <option value="AC">Acre</option>
+                          <option value="AL">Alagoas</option>
+                          <option value="AP">Amapá</option>
+                          <option value="AM">Amazonas</option>
+                          <option value="BA">Bahia</option>
+                          <option value="CE">Ceará</option>
+                          <option value="DF">Distrito Federal</option>
+                          <option value="ES">Espírito Santo</option>
+                          <option value="GO">Goiás</option>
+                          <option value="MA">Maranhão</option>
+                          <option value="MT">Mato Grosso</option>
+                          <option value="MS">Mato Grosso do Sul</option>
+                          <option value="MG">Minas Gerais</option>
+                          <option value="PA">Pará</option>
+                          <option value="PB">Paraíba</option>
+                          <option value="PR">Paraná</option>
+                          <option value="PE">Pernambuco</option>
+                          <option value="PI">Piauí</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Rio Grande do Norte</option>
+                          <option value="RS">Rio Grande do Sul</option>
+                          <option value="RO">Rondônia</option>
+                          <option value="RR">Roraima</option>
+                          <option value="SC">Santa Catarina</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Sergipe</option>
+                          <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>  
+            </form>
+            <br>
+            <a class="button" href="#">Cadastrar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Gamer<span> TEC</span></a>
+          <p>©2021 Gamer TEC.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

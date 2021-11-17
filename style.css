@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+
+  /* fonts */
+  --title-font-size: 2rem;
+  --subtitle-font-size: 1rem;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #fafafa;
+}
+
+.logo {
+  font: 700 1.5rem sans-serif;
+  color: #000000;
+}
+
+.logo span {
+  color: #0000FF;
+}
+
+.logo-alt span {
+  color: #fafafa;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  transition: color 0.3s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #0000FF;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #0000FF;
+
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+main {
+  margin-top: 4.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem sans-serif;
+  color: #000000;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font: 700 1.875rem sans-serif;
+  color: #000000;
+  font-size: 2.25rem;
+}
+
+.title-alt {
+  font: 500 1.25rem sans-serif;
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.produto {
+  width: 300px;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+nav .menu {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+nav .menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .menu ul a.title {
+  font: 400 1rem sans-serif;
+}
+
+nav .icon-menu {
+  display: none;
+}
+.section header {
+ max-width: 32rem;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+  color: #000000;
+}
+
+
+
+.card {
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 550px;
+  padding: 2rem;
+}
+
+.button {
+  width: 30%;
+  margin-left: 245px;
+  background-color: #0000FF;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.125rem;
+  padding: 0 2rem;
+  font: 500 1rem sans-serif;
+  transform: background 0.3s;
+}
+
+.button-alt {
+  width: 30%;
+  background-color: #0000FF;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.button:hover {
+  background: #000066;
+}
+
+#home .container {
+  margin: 0 auto;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 24rem;
+  text-align: left;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+#home .image {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+#formulario {
+  position: relative;
+  margin: 0 auto;
+}
+fieldset {
+  padding: 16px;
+  font-size: 18px;
+  width: 70%;
+}
+footer {
+  background: #0000FF;
+}
+
+footer .container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+footer .brand p {
+  color: #fafafa;
+  margin-bottom: 0.75rem;
+}
+
+footer.section {
+  padding: 3.75rem 0;
+}
+
+
+:root {
+  --title-font-size: 2.25rem;
+  --subtitle-font-size: 1.125rem;
+}
