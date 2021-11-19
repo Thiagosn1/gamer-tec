@@ -12,22 +12,6 @@ ul {
   list-style: none;
 }
 
-:root {
-  --header-height: 4.5rem;
-
-  /* colors */
-  --hue: 159;
-  /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-
-  /* fonts */
-  --title-font-size: 2rem;
-  --subtitle-font-size: 1rem;
-}
-
-/* Header */
 #header {
   position: fixed;
   top: 0;
@@ -35,13 +19,13 @@ ul {
   z-index: 100;
   width: 100%;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   border-bottom: 1px solid #e4e4e4;
   background-color: #fafafa;
 }
 
 .logo {
-  font: 700 1.5rem sans-serif;
+  font: 700 24px sans-serif;
   color: #000000;
 }
 
@@ -56,7 +40,7 @@ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  height: 4.5rem;
+  height: 72px;
   align-items: center;
   width: 100%;
 }
@@ -82,7 +66,7 @@ nav ul li a::after {
 
   position: absolute;
   left: 0;
-  bottom: -1rem;
+  bottom: -16px;
 
   transition: 0.2s;
 }
@@ -92,7 +76,7 @@ nav ul li a:hover::after {
 }
 
 nav.show ul.grid {
-  gap: 4rem;
+  gap: 64px;
 }
 
 nav.show .menu {
@@ -106,28 +90,28 @@ nav .menu {
 }
 
 main {
-  margin-top: 4.5rem;
+  margin-top: 72px;
 }
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font: 400 1rem sans-serif;
+  font: 400 16px sans-serif;
   color: #000000;
   background: #fafafa;
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font: 700 1.875rem sans-serif;
+  font: 700 30px sans-serif;
   color: #000000;
-  font-size: 2.25rem;
+  font-size: 36px;
 }
 
 .title-alt {
-  font: 500 1.25rem sans-serif;
-  font-size: 1.25rem;
+  font: 500 20px sans-serif;
+  font-size: 20px;
 }
 
 .container {
@@ -150,11 +134,11 @@ img {
 }
 
 .section {
-  padding: 2rem 0;
+  padding: 32px 0;
 }
 
 .section .title {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 nav .menu {
@@ -165,25 +149,25 @@ nav .menu {
 
 nav .menu ul {
   display: flex;
-  gap: 2rem;
+  gap: 32px;
 }
 
 nav .menu ul a.title {
-  font: 400 1rem sans-serif;
+  font: 400 16px sans-serif;
 }
 
 nav .icon-menu {
   display: none;
 }
 .section header {
- max-width: 32rem;
+ max-width: 512px;
  text-align: center;
  margin-left: auto;
  margin-right: auto;
 }
 
 .section .subtitle {
-  font-size: var(--subtitle-font-size);
+  font-size: 16px;
   color: #000000;
 }
 
@@ -194,7 +178,7 @@ nav .icon-menu {
   flex-wrap: wrap;
   width: 80%;
   height: 550px;
-  padding: 2rem;
+  padding: 32px;
 }
 
 .card-alt {
@@ -210,9 +194,9 @@ nav .icon-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.125rem;
-  padding: 0 2rem;
-  font: 500 1rem sans-serif;
+  height: 50px;
+  padding: 0 32px;
+  font: 500 16px sans-serif;
   transform: background 0.3s;
 }
 
@@ -223,7 +207,7 @@ nav .icon-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.125rem;
+  height: 50px;
 }
 
 .button-margin {
@@ -239,23 +223,23 @@ nav .icon-menu {
 }
 
 #home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  max-width: 24rem;
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: 384px;
   text-align: left;
 }
 
 #home .text h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 #home .text p {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 #home .image {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-right: 24px;
   position: relative;
 }
 
@@ -281,21 +265,15 @@ footer .container {
 footer .logo {
   color: #000000;
   display: inline-block;
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  margin-bottom: 24px;
+  font-size: 40px;
 }
 
 footer .brand p {
   color: #fafafa;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 footer.section {
-  padding: 3.75rem 0;
-}
-
-
-:root {
-  --title-font-size: 2.25rem;
-  --subtitle-font-size: 1.125rem;
+  padding: 60px 0;
 }
